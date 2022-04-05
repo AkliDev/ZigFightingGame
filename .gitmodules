@@ -1,0 +1,4 @@
+
+[submodule "vendor/raylib-zig"]
+	path = vendor/raylib-zig
+	url = https://github.com/Not-Nik/raylib-zig.git
