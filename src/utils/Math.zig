@@ -7,3 +7,8 @@ pub const IntVector2 = struct {
         return IntVector2 {.x = self.x + other.x, .y = self.y + other.y };
     }
 };
+
+pub fn WorldToScreen(coordinate: i32) i32
+{
+    return @divTrunc(coordinate, 1000);
+}
