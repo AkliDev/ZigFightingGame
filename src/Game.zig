@@ -55,13 +55,6 @@ pub fn GameLoop() void
         //reflects the postion of our game object
         rl.DrawCircle(screenX,screenY,50,rl.MAROON);
 
-        if(gameState.GameData) | gameData |
-        {
-            
-            const hitbox = gameData.HitboxGroup.HitBoxes.items[0];
-            rl.DrawRectangleLines(hitbox.Left,hitbox.Top,hitbox.Right - hitbox.Left, hitbox.Top - hitbox.Bottom,rl.RED);
-        }
-
         rl.EndDrawing();
     }    
 }

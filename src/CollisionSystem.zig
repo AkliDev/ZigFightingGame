@@ -61,7 +61,7 @@ const CollisionSystem = struct
     {
         _ = gameState;
 
-        // Preprocessing step. Generate hitboxes used to actually check collision/
+        // Preprocessing step. Generate hitboxes used to check collision
         //var entity: usize = 0;
         //while(entity < gameState.entityCount)
         //{

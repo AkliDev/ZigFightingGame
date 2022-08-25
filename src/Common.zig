@@ -61,13 +61,11 @@ test "Test getting translated hitboxes from an action"
     const position = Math.IntVector2{ .x = 200, .y = 400};
     const count = GetVulerableBoxes(hitboxPool[0..],action, frame, position);
 
-    
-
     const testingBox = action.VulnerableHitboxGroups.items[0].HitBoxes.items[0];
     const hitbox = hitboxPool[0];
 
     try std.testing.expect(count == 1);
-    try std.testing.expect(action.VulnerableHitboxGroups.items[0].IsActiveOnFrame(1));
+    try std.testing.expect(action.VulnerableHitboxGroups.items[0].IsActiveOnFrame(frame));
     
     try std.testing.expect(hitbox.Top == position.y + testingBox.Top );
     try std.testing.expect(hitbox.Bottom == position.y + testingBox.Bottom);
